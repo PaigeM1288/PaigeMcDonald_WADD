@@ -6,10 +6,9 @@ function changeCharacter(character){
         break;
         case "bblg":
             document.getElementById("img").src="images/bblg.png";
-            document.getElementById("img").alt="images/bblg.png";
         break;
         case "bblng":
-            document.getElementById("img").src="images/bblng.png";
+            document.getElementById("img").src= "images/bblng.png";
         break;
         case "bbng":
             document.getElementById("img").src="images/bbng.png";
@@ -112,7 +111,6 @@ function changeCharacter(character){
         
     var pName = document.getElementById("typed").value;
     var chr = document.querySelectorAll("img").alt;
-    alert(chr);
     localStorage.setItem(pName, chr);
     }
 
