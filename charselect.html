@@ -10,12 +10,11 @@
 
 
     <h1>Choose Your Character</h1>
-    <form name="character-selection" method="post" onsubmit="store()" onreset="remove()">
+    <form id="theForm" name="character-selection" method="get">
     <label for="player">Enter your name:</label>
-    <input id="player" name="player" type="text" placeholder="Your Name" required>
-    <button id="submit" type="submit" value="Submit">SUBMIT</button>
+    <input id="typed" name="player" type="text" placeholder="Your Name" required>
+    <button id="submit" type="submit" onclick="save()" value="Submit">SUBMIT</button>
     <button id="reset" type="reset" value="Reset">RESET</button>
-    <button id="read" type="button" onclick="readinfo()" value="Read">READ</button>
     </form>
 
     <div id="image">

@@ -6,6 +6,7 @@ function changeCharacter(character){
         break;
         case "bblg":
             document.getElementById("img").src="images/bblg.png";
+            document.getElementById("img").alt="images/bblg.png";
         break;
         case "bblng":
             document.getElementById("img").src="images/bblng.png";
@@ -99,22 +100,21 @@ function changeCharacter(character){
         break;
 
     }
+
 }
 
-function store(){
-    var playername = document.getElementById("player").value;
+     function save(){
+    var myForm = document.getElementById("theForm");
+        function noReset(event){
+            event.preventDefault();
+        }
+        myForm.addEventListener('submit', noReset);
+        
+    var pName = document.getElementById("typed").value;
+    var chr = document.querySelectorAll("img").alt;
+    alert(chr);
+    localStorage.setItem(pName, chr);
+    }
 
-    localStorage.setItem("name", playername);
-}
 
-function remove(){
-
-    localStorage.clear();
-}
-
-function readinfo(){
-
-    let playername = localStorage.getItem("player").value;
-    console.log(playername);
-    
-}
+ 
