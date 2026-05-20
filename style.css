@@ -15,7 +15,16 @@
 
     #characters{
         height: auto;
-        padding: 15%;
-        padding-top: 0%;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 2%;
         position: relative;
+    }
+
+    #submit{
+        position: absolute;
+        right: 100px;
+        width: 150px;
+        height: 50px;
+        bottom: auto;
     }

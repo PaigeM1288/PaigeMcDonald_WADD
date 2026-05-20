@@ -1,4 +1,5 @@
-function toggleMode(){
-    var element = document.body;
-    element.classList.toggle("darkMode");
+function storage(){
+    var playername = document.getElementById("player").value;
+
+    localStorage.getItem(playername);
 }

@@ -100,3 +100,21 @@ function changeCharacter(character){
 
     }
 }
+
+function store(){
+    var playername = document.getElementById("player").value;
+
+    localStorage.setItem("name", playername);
+}
+
+function remove(){
+
+    localStorage.clear();
+}
+
+function readinfo(){
+
+    let playername = localStorage.getItem("player").value;
+    console.log(playername);
+    
+}

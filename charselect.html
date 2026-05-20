@@ -8,7 +8,16 @@
   </head>
   <body>
 
+
     <h1>Choose Your Character</h1>
+    <form name="character-selection" method="post" onsubmit="store()" onreset="remove()">
+    <label for="player">Enter your name:</label>
+    <input id="player" name="player" type="text" placeholder="Your Name" required>
+    <button id="submit" type="submit" value="Submit">SUBMIT</button>
+    <button id="reset" type="reset" value="Reset">RESET</button>
+    <button id="read" type="button" onclick="readinfo()" value="Read">READ</button>
+    </form>
+
     <div id="image">
       <img id="img" src="images\bbg.png" alt="cartoon character with brown skin, glasses and blonde hair in side ponytail" width="280" height="500">
     </div>
@@ -18,7 +27,7 @@
       <button type="button" id="bblg" onclick="changeCharacter('bblg')"><img src="images\bblg.png" alt="cartoon character with dark brown skin, glasses and blonde hair in side ponytail" width="60" height="100"></button>
       <button type="button" id="bblng" onclick="changeCharacter('bblng')"><img src="images\bblng.png" alt="cartoon character with dark brown skin, no glasses and blonde hair in side ponytail" width="60" height="100"></button>
       <button type="button" id="bbng" onclick="changeCharacter('bbng')"><img src="images\bbng.png" alt="cartoon character with brown skin, no glasses and blonde hair in side ponytail" width="60" height="100"></button>
-            <button type="button" id="btg" onclick="changeCharacter('btg')"><img src="images\btg.png" alt="cartoon character with tan skin, glasses and blonde hair in side ponytail" width="60" height="100"></button>
+      <button type="button" id="btg" onclick="changeCharacter('btg')"><img src="images\btg.png" alt="cartoon character with tan skin, glasses and blonde hair in side ponytail" width="60" height="100"></button>
       <button type="button" id="btng" onclick="changeCharacter('btng')"><img src="images\btng.png" alt="cartoon character with tan skin, no glasses and blonde hair in side ponytail" width="60" height="100"></button>
       <button type="button" id="bwg" onclick="changeCharacter('bwg')"><img src="images\bwg.png" alt="cartoon character with white skin, glasses and blonde hair in side ponytail" width="60" height="100"></button>
       <button type="button" id="bwng" onclick="changeCharacter('bwng')"><img src="images\bwng.png" alt="cartoon character with white skin, no glasses and blonde hair in side ponytail" width="60" height="100"></button>
