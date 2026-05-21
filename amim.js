@@ -1,1 +1,0 @@
-const pName = localStorage.getItem("")
